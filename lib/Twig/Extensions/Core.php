@@ -8,7 +8,7 @@ class Twig_Markdown_Extension extends Twig_Extension
 {
     public function getTokenParsers()
     {
-        include dirname(__FILE__).'/../TokenParser/Markdown.php';
+        include_once dirname(__FILE__).'/../TokenParser/Markdown.php';
         return array(
             new Twig_TokenParser_Markdown(),
         );
@@ -33,7 +33,7 @@ class Twig_Markdown_Extension extends Twig_Extension
 
 function twig_markdown($data)
 {
-    include dirname(__FILE__).'/../Markdown/markdown.php';
+    include_once dirname(__FILE__).'/../Markdown/markdown.php';
     return Markdown($data);
 }
 

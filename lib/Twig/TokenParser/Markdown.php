@@ -1,6 +1,6 @@
 <?php
 
-include dirname(__FILE__).'/../Node/Markdown.php';
+include_once dirname(__FILE__).'/../Node/Markdown.php';
 
 class Twig_TokenParser_Markdown extends Twig_TokenParser
 {

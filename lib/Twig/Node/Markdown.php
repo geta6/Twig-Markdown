@@ -13,7 +13,7 @@ class Twig_Node_Markdown extends Twig_Node
      */
     public function compile(Twig_Compiler $compiler)
     {
-        include dirname(__FILE__).'/../Markdown/markdown.php';
+        include_once dirname(__FILE__).'/../Markdown/markdown.php';
         $compiler
             ->addDebugInfo($this)
             ->write("ob_start();\n")
