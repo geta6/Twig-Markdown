@@ -6,11 +6,11 @@ markdown converter is php-markdown-extra.
 
 ## usage
 
-{% markdown %}markdownedtext{% endmarkdown %}
+`{% markdown %}markdownedtext{% endmarkdown %}`
 
 or
 
-{{ markdowned|markdown|raw }}
+`{{ markdowned|markdown|raw }}`
 
 ## include
 
