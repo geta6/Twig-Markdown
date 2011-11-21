@@ -1,6 +1,6 @@
 # Twig-Markdown
 
-markdowned text to html converter for Twig.
+convert markdowned text to html for Twig.
 
 markdown converter is php-markdown-extra.
 
@@ -14,7 +14,11 @@ or
 
 ## include
 
+### Silex
+
 ```php
+$app->register(~~twig~~);
+
 include __DIR__.'/../vendor/twig-markdown/lib/Twig/Extensions/Core.php';
 $app['twig']->addExtension(new Twig_Markdown_Extension());
 ```
