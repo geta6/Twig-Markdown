@@ -33,7 +33,6 @@ class Twig_Markdown_Extension extends Twig_Extension
 
 function twig_markdown($data)
 {
-    include_once dirname(__FILE__).'/../Markdown/markdown.php';
     return Markdown($data);
 }
 
