@@ -19,6 +19,7 @@ or
 ```php
 $app->register(~~twig~~);
 
+include __DIR__.'/../vendor/michelf/php-markdown/markdown.php';
 include __DIR__.'/../vendor/twig-markdown/lib/Twig/Extensions/Core.php';
 $app['twig']->addExtension(new Twig_Markdown_Extension());
 ```
