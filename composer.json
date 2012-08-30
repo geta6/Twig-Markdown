@@ -20,7 +20,7 @@
         "psr-0" : {
             "Twig_" : "lib/"
         }
-    }
+    },
     "minimum-stability": "dev",
     "extra": {
         "branch-alias": {
