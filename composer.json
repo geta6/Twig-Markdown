@@ -1,15 +1,9 @@
 {
-    "name": "geta6/Twig-Markdown",
+    "name": "geta6/twig-markdown",
     "authors": [
         {
             "name": "getakura",
             "email": "getakura@gmail.com"
-        }
-    ],
-    "repositories": [
-        {
-            "type": "git",
-            "url": "http://github.com/michelf/php-markdown"
         }
     ],
     "require": {
@@ -21,7 +15,6 @@
             "Twig_" : "lib/"
         }
     },
-    "minimum-stability": "dev",
     "extra": {
         "branch-alias": {
             "dev-master": "1.0-dev"
