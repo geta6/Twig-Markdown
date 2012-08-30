@@ -1,0 +1,24 @@
+{
+    "name": "geta6/Twig-Markdown",
+    "authors": [
+        {
+            "name": "getakura",
+            "email": "getakura@gmail.com"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "git",
+            "url": "http://github.com/michelf/php-markdown"
+        }
+    ],
+    "require": {
+        "twig/twig": "1.*",
+        "michelf/php-markdown": "x1.*"
+    },
+    "autoload": {
+        "psr-0" : {
+            "Twig_" : "lib/"
+        }
+    }
+}
