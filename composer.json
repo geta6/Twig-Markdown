@@ -1,0 +1,17 @@
+{
+    "name": "geta6/twig-markdown",
+    "authors": [
+        {
+            "name": "getakura",
+            "email": "getakura@gmail.com"
+        }
+    ],
+    "require": {
+        "twig/twig": "1.*"
+    },
+    "autoload": {
+        "psr-0" : {
+            "Twig_" : "lib/"
+        }
+    }
+}

@@ -1,0 +1,62 @@
+## Installation with composer
+
+- Install composer in your project:
+
+```shell
+curl -s http://getcomposer.org/installer | php
+```
+
+- Create a composer.json file in your project root:
+
+```javascript
+{
+    "repositories": [
+        {
+            "type": "package",
+            "package": {
+                "name": "michelf/php-markdown",
+                "version": "1.0",
+                "dist": {
+                    "url": "https://github.com/michelf/php-markdown/zipball/extra",
+                    "type": "zip"
+                },
+                "autoload": {
+                    "files": [
+                        "markdown.php"
+                    ]
+                }
+            }
+        },
+        {
+            "type": "vcs",
+            "url": "http://github.com/geta6/Twig-Markdown"
+        }
+    ],
+    "require": {
+        "michelf/php-markdown": "1.*",
+        "geta6/twig-markdown": "@dev"
+    }
+}
+```
+
+- Install via composer
+
+```shell
+php composer.phar install
+```
+
+## Usage
+
+```php
+require 'vendor/autoload.php';
+
+$loader = new Twig_Loader_String();
+$twig = new Twig_Environment($loader);
+$twig->addExtension(new Twig_Extension_Markdown());
+
+echo $twig->render('
+{% markdown %}
+###Hello {{ name }}!###
+{% endmarkdown %}
+', array('name' => 'Twig-Markdown'));
+```
