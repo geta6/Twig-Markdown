@@ -81,15 +81,11 @@ $markdown = new \Twig_Extension_Markdown;
 $twig->addExtension( $markdown );
 ```
 
+## Development
 
-### Silex
+To update the `package.xml` file, you need to install `onion`:
 
-```php
-$app->register(~~twig~~);
 
-include __DIR__.'/../vendor/twig-markdown/lib/Twig/Extensions/Core.php';
-$app['twig']->addExtension(new Twig_Markdown_Extension());
-```
 
 ## todo
 
