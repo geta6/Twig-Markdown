@@ -6,9 +6,58 @@ markdown converter is php-markdown-extra.
 
 ## Install
 
-Use Composer, or install locally via PEAR installer:
+### Install via PEAR
+
+Install via PEAR installer locally:
 
     $ pear install -f package.xml
+
+### Install via composer
+
+Install composer in your project:
+
+```shell
+curl -s http://getcomposer.org/installer | php
+```
+
+Create a composer.json file in your project root:
+
+```javascript
+{
+    "repositories": [
+        {
+            "type": "package",
+            "package": {
+                "name": "michelf/php-markdown",
+                "version": "1.0",
+                "dist": {
+                    "url": "https://github.com/michelf/php-markdown/zipball/extra",
+                    "type": "zip"
+                },
+                "autoload": {
+                    "files": [
+                        "markdown.php"
+                    ]
+                }
+            }
+        },
+        {
+            "type": "vcs",
+            "url": "http://github.com/geta6/Twig-Markdown"
+        }
+    ],
+    "require": {
+        "michelf/php-markdown": "1.*",
+        "geta6/twig-markdown": "@dev"
+    }
+}
+```
+
+Run install command:
+
+```shell
+php composer.phar install
+```
 
 ## Usage
 
