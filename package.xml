@@ -11,7 +11,7 @@
     <active>yes</active>
   </lead>
   <date>2013-01-23</date>
-  <time>21:07:18</time>
+  <time>21:15:36</time>
   <version>
     <release>0.1.0</release>
     <api>0.1.0</api>
@@ -24,7 +24,7 @@
   <notes>-</notes>
   <contents>
     <dir name="/">
-      <file name="lib/Twig/Extensions/Markdown.php" role="php" md5sum="b8554c80d35fcf587ba0d696d8712c5a"/>
+      <file name="lib/Twig/Extension/Markdown.php" role="php" md5sum="3197efd83718893c21d55bc22500e718"/>
       <file name="lib/Twig/Markdown/markdown.php" role="php" md5sum="b1742038b9469db6af3daef69c209efb"/>
       <file name="lib/Twig/Node/Markdown.php" role="php" md5sum="7f5f23a0874936c2f992da22167aa79c"/>
       <file name="lib/Twig/TokenParser/Markdown.php" role="php" md5sum="0246e5a520d898f7051d7fccd14cf37f"/>
@@ -42,7 +42,7 @@
   </dependencies>
   <phprelease>
     <filelist>
-      <install name="lib/Twig/Extensions/Markdown.php" as="Twig/Extensions/Markdown.php"/>
+      <install name="lib/Twig/Extension/Markdown.php" as="Twig/Extension/Markdown.php"/>
       <install name="lib/Twig/Markdown/markdown.php" as="Twig/Markdown/markdown.php"/>
       <install name="lib/Twig/Node/Markdown.php" as="Twig/Node/Markdown.php"/>
       <install name="lib/Twig/TokenParser/Markdown.php" as="Twig/TokenParser/Markdown.php"/>

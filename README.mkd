@@ -4,7 +4,13 @@ convert markdowned text to html for Twig.
 
 markdown converter is php-markdown-extra.
 
-## usage
+## Install
+
+Use Composer, or install locally via PEAR installer:
+
+    $ pear install -f package.xml
+
+## Usage
 
 `{% markdown %}markdownedtext{% endmarkdown %}`
 
