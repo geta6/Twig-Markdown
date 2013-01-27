@@ -4,7 +4,66 @@ convert markdowned text to html for Twig.
 
 markdown converter is php-markdown-extra.
 
-## usage
+## Install
+
+### Install via PEAR
+
+Install via PEAR installer locally:
+
+    $ pear install -f package.xml
+
+Install via PEAR installer from Corneltek PEAR channel:
+
+    $ pear install -a corneltek/Twig_Extensions_Markdown
+
+### Install via composer
+
+Install composer in your project:
+
+```shell
+curl -s http://getcomposer.org/installer | php
+```
+
+Create a composer.json file in your project root:
+
+```javascript
+{
+    "repositories": [
+        {
+            "type": "package",
+            "package": {
+                "name": "michelf/php-markdown",
+                "version": "1.0",
+                "dist": {
+                    "url": "https://github.com/michelf/php-markdown/zipball/extra",
+                    "type": "zip"
+                },
+                "autoload": {
+                    "files": [
+                        "markdown.php"
+                    ]
+                }
+            }
+        },
+        {
+            "type": "vcs",
+            "url": "http://github.com/geta6/Twig-Markdown"
+        }
+    ],
+    "require": {
+        "michelf/php-markdown": "1.*",
+        "geta6/twig-markdown": "@dev"
+    }
+}
+```
+
+Run install command:
+
+```shell
+php composer.phar install
+```
+
+## Usage
 
 `{% markdown %}markdownedtext{% endmarkdown %}`
 
@@ -14,14 +73,23 @@ or
 
 ## include
 
-### Silex
+```php 
+# use built-in twig autoloader
+require_once 'Twig/Autoloader.php';
+Twig_Autoloader::register();
 
-```php
-$app->register(~~twig~~);
+$debug = new \Twig_Extensions_Extension_Debug;
+$twig->addExtension( $debug );
 
-include __DIR__.'/../vendor/twig-markdown/lib/Twig/Extensions/Core.php';
-$app['twig']->addExtension(new Twig_Markdown_Extension());
+$markdown = new \Twig_Extension_Markdown;
+$twig->addExtension( $markdown );
 ```
+
+## Development
+
+To update the `package.xml` file, you need to install `onion`:
+
+
 
 ## todo
 
