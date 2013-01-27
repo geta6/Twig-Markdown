@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" packagerversion="1.4.10" version="2.0" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0               http://pear.php.net/dtd/tasks-1.0.xsd               http://pear.php.net/dtd/package-2.0               http://pear.php.net/dtd/package-2.0.xsd">
   <name>Twig_Extensions_Markdown</name>
-  <channel>pear.twig-project.org</channel>
+  <channel>pear.corneltek.com</channel>
   <summary>markdown extension</summary>
   <description>markdown extension</description>
   <lead>
@@ -11,7 +11,7 @@
     <active>yes</active>
   </lead>
   <date>2013-01-27</date>
-  <time>17:31:04</time>
+  <time>17:33:22</time>
   <version>
     <release>0.1.0</release>
     <api>0.1.0</api>

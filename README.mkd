@@ -12,6 +12,10 @@ Install via PEAR installer locally:
 
     $ pear install -f package.xml
 
+Install via PEAR installer from Corneltek PEAR channel:
+
+    $ pear install -a corneltek/Twig_Extensions_Markdown
+
 ### Install via composer
 
 Install composer in your project:
