@@ -4,7 +4,7 @@ if (!defined('ENT_SUBSTITUTE')) {
     define('ENT_SUBSTITUTE', 8);
 }
 
-class Twig_Markdown_Extension extends Twig_Extension
+class Twig_Extension_Markdown extends Twig_Extension
 {
     public function getTokenParsers()
     {
